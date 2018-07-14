@@ -1,9 +1,5 @@
 env:
   dev
-  
-server:
-  port: 8084
-  
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -14,7 +10,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-    
 eureka:
   client:
     register-with-eureka: true
@@ -22,12 +17,10 @@ eureka:
       defaultZone: http://127.0.0.1:8761/eureka/
   instance:
     hostname: 127.0.0.1
-    
 #Load balancing strategy when request PRODUCT-SERVICE server
 PRODUCT-SERVICE:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-    
 #customized properties
 com:
   daniel:
