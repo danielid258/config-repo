@@ -1,8 +1,10 @@
+env:
+  dev
+  
 server:
   port: 8084
+  
 spring:
-  application:
-    name: order-service
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/test?generateSimpleParameterMetadata=true&useUnicode=true&characterEncoding=utf8
@@ -12,6 +14,7 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+    
 eureka:
   client:
     register-with-eureka: true
@@ -20,13 +23,13 @@ eureka:
   instance:
     hostname: 127.0.0.1
     
-#Load balancing strategy
+#Load balancing strategy when request PRODUCT-SERVICE server
 PRODUCT-SERVICE:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    
+#customized properties
 com:
   daniel:
     name: Daniel
     age: 28
-env:
-  dev
