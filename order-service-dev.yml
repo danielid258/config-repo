@@ -30,3 +30,5 @@ com:
     age: 28
 env:
   dev
+label:
+  release
