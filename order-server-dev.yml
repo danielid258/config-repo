@@ -6,6 +6,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/test?generateSimpleParameterMetadata=true&useUnicode=true&characterEncoding=utf8
     username: root
     password: 111
+#当eureka的端口是默认的8761时 eureka的配置可以统一配置到git中    
 eureka:
   client:
     service-url:
