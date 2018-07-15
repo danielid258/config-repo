@@ -20,5 +20,5 @@ spring:
     show-sql: true
 com:
   daniel:
-    danielName: dan
-    danielAge: 28
+    name: dan
+    age: 28
