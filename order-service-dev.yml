@@ -18,3 +18,7 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+com:
+  daniel:
+    danielName: dan
+    danielAge: 28
