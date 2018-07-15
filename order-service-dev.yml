@@ -1,21 +1,20 @@
-env:
-  dev
+env: dev
 eureka:
   client:
     register-with-eureka: true
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/  
+      defaultZone: http://127.0.0.1:8761/eureka/
 spring:
   application:
     name: order-service
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
+    password: 111
     url: jdbc:mysql://127.0.0.1:3306/test?generateSimpleParameterMetadata=true&useUnicode=true&characterEncoding=utf8
     username: root
-    password: 111
+  instance:
+    hostname: 127.0.0.1
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-  instance:
-    hostname: 127.0.0.1
