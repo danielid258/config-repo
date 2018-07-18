@@ -1,5 +1,13 @@
 env:
   dev
+spring:
+  application:
+    name: order-server
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   instance:
     hostname: 127.0.0.1
