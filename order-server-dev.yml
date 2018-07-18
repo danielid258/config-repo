@@ -1,4 +1,4 @@
-profile: dev
+env: dev
 spring:
   application:
     name: order-server
