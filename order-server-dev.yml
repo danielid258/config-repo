@@ -1,15 +1,8 @@
-spring:
-  application:
-    name: order-server
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/test?generateSimpleParameterMetadata=true&useUnicode=true&characterEncoding=utf8
-    username: root
-    password: 111
-#当eureka的端口是默认的8761时 eureka的配置可以统一配置到git中    
+env:
+  dev
 eureka:
+  instance:
+    hostname: 127.0.0.1
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
-env:
-  dev hello
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
