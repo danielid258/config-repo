@@ -1,4 +1,4 @@
-env: test
+profile: test
 eureka:
   client:
     service-url:
