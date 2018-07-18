@@ -1,4 +1,4 @@
-env: dev111111111111111
+env: dev
 spring:
   application:
     name: order-server
