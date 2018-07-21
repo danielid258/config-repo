@@ -1,3 +1,10 @@
+env: dev
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?generateSimpleParameterMetadata=true&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 111
 eureka:
   instance:
     hostname: 127.0.0.1
