@@ -1,6 +1,1 @@
 env: dev
-management:
-  endpoints:
-    web:
-      exposure:
-        include: *
