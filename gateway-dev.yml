@@ -1,5 +1,6 @@
 env: dev
 management:
-  endpoint:
-    configprops:
-      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
