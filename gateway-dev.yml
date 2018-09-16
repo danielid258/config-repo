@@ -1,4 +1,23 @@
 env: dev
+
+zuul:
+  routes:
+    #orderRoutes:  #route name,customized
+      #path: /order2/**        #/order2/order/create?id=3 -> /order/order/create?id=3
+      #service-id: order
+    #simpled
+    order: /order2/**
+
+  #ignored url,can not request
+  ignored-patterns:
+    #- /order/order/ignore
+    #- /order2/order/ignore
+    #simpled
+    /**/order/ignore
+
+  #sensitive header,eg: cookie
+  sensitive-headers:
+  
 management:
   endpoints:
     web:
