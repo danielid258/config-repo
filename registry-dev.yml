@@ -1,2 +1,4 @@
 environment:
   dev
+server:
+  port: 8761
