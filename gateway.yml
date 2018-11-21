@@ -1,6 +1,3 @@
-server:
-  port: 4000
-  
 zuul:
   ignoredServices: '*'
   host:
