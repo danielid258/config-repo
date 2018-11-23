@@ -14,4 +14,10 @@ spring:
     host: 192.168.42.53
     port: 5672
     username: admin
-    password: 123456      
+    password: 123456
+#actives /actuator/bus-refresh      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"    
