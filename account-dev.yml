@@ -2,5 +2,5 @@ environment: dev
 server:
   port: 6001
 lewis:
-  name: daniel
+  name: lewis
   age: 25
