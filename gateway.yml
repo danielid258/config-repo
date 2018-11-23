@@ -11,8 +11,8 @@ zuul:
         stripPrefix: false
         sensitiveHeaders:
     account-service:
-        path: /accounts/**
-        serviceId: account-service
+        path: /account/**
+        serviceId: account
         stripPrefix: false
         sensitiveHeaders:
     statistics-service:
